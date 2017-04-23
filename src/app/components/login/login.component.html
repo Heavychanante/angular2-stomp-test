@@ -1,0 +1,22 @@
+<div class="container">
+	<div class="form-signin-heading">Welcome</div>
+	<div class="form-signin">
+		<div class="row">
+			<div class="input-field col s12">
+				<input [(ngModel)]="user.email" id="email" type="email"
+					class="validate"> <label for="email">Email</label>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="input-field col s12">
+				<input [(ngModel)]="user.password" id="password" type="password"
+					class="validate"> <label for="password">Password</label>
+			</div>
+		</div>
+
+		<span>{{errorMsg}}</span>
+		<button (click)="login()" class="btn btn-lg btn-primary btn-block"
+			type="submit" name="action">Login</button>
+	</div>
+</div>
